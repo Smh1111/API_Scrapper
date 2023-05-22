@@ -1,0 +1,32 @@
+[
+{
+  "directory": "D:/API_Scrapper/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/api_json_extraction_test.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -o CMakeFiles\\api_json_extraction_test.dir\\test\\api_json_extraction_test.cpp.obj -c D:\\API_Scrapper\\test\\api_json_extraction_test.cpp",
+  "file": "D:/API_Scrapper/test/api_json_extraction_test.cpp",
+  "output": "CMakeFiles/api_json_extraction_test.dir/test/api_json_extraction_test.cpp.obj"
+},
+{
+  "directory": "D:/API_Scrapper/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/subtract_test.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -o CMakeFiles\\subtract_test.dir\\test\\subtract_test.cpp.obj -c D:\\API_Scrapper\\test\\subtract_test.cpp",
+  "file": "D:/API_Scrapper/test/subtract_test.cpp",
+  "output": "CMakeFiles/subtract_test.dir/test/subtract_test.cpp.obj"
+},
+{
+  "directory": "D:/API_Scrapper/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/subtract_test.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -o CMakeFiles\\subtract_test.dir\\src\\subtract.cpp.obj -c D:\\API_Scrapper\\src\\subtract.cpp",
+  "file": "D:/API_Scrapper/src/subtract.cpp",
+  "output": "CMakeFiles/subtract_test.dir/src/subtract.cpp.obj"
+},
+{
+  "directory": "D:/API_Scrapper/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/check.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -o CMakeFiles\\check.dir\\check.cpp.obj -c D:\\API_Scrapper\\check.cpp",
+  "file": "D:/API_Scrapper/check.cpp",
+  "output": "CMakeFiles/check.dir/check.cpp.obj"
+},
+{
+  "directory": "D:/API_Scrapper/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/check.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -o CMakeFiles\\check.dir\\src\\subtract.cpp.obj -c D:\\API_Scrapper\\src\\subtract.cpp",
+  "file": "D:/API_Scrapper/src/subtract.cpp",
+  "output": "CMakeFiles/check.dir/src/subtract.cpp.obj"
+}
+]

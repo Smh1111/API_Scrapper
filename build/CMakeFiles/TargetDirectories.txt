@@ -1,0 +1,5 @@
+D:/API_Scrapper/build/CMakeFiles/api_json_extraction_test.dir
+D:/API_Scrapper/build/CMakeFiles/subtract_test.dir
+D:/API_Scrapper/build/CMakeFiles/check.dir
+D:/API_Scrapper/build/CMakeFiles/edit_cache.dir
+D:/API_Scrapper/build/CMakeFiles/rebuild_cache.dir
