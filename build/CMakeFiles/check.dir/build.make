@@ -83,32 +83,33 @@ CMakeFiles/check.dir/check.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/check.dir/check.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\API_Scrapper\check.cpp -o CMakeFiles\check.dir\check.cpp.s
 
-CMakeFiles/check.dir/src/subtract.cpp.obj: CMakeFiles/check.dir/flags.make
-CMakeFiles/check.dir/src/subtract.cpp.obj: CMakeFiles/check.dir/includes_CXX.rsp
-CMakeFiles/check.dir/src/subtract.cpp.obj: D:/API_Scrapper/src/subtract.cpp
-CMakeFiles/check.dir/src/subtract.cpp.obj: CMakeFiles/check.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\API_Scrapper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/check.dir/src/subtract.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/check.dir/src/subtract.cpp.obj -MF CMakeFiles\check.dir\src\subtract.cpp.obj.d -o CMakeFiles\check.dir\src\subtract.cpp.obj -c D:\API_Scrapper\src\subtract.cpp
+CMakeFiles/check.dir/src/CurlWrapper.cpp.obj: CMakeFiles/check.dir/flags.make
+CMakeFiles/check.dir/src/CurlWrapper.cpp.obj: CMakeFiles/check.dir/includes_CXX.rsp
+CMakeFiles/check.dir/src/CurlWrapper.cpp.obj: D:/API_Scrapper/src/CurlWrapper.cpp
+CMakeFiles/check.dir/src/CurlWrapper.cpp.obj: CMakeFiles/check.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\API_Scrapper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/check.dir/src/CurlWrapper.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/check.dir/src/CurlWrapper.cpp.obj -MF CMakeFiles\check.dir\src\CurlWrapper.cpp.obj.d -o CMakeFiles\check.dir\src\CurlWrapper.cpp.obj -c D:\API_Scrapper\src\CurlWrapper.cpp
 
-CMakeFiles/check.dir/src/subtract.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/check.dir/src/subtract.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\API_Scrapper\src\subtract.cpp > CMakeFiles\check.dir\src\subtract.cpp.i
+CMakeFiles/check.dir/src/CurlWrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/check.dir/src/CurlWrapper.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\API_Scrapper\src\CurlWrapper.cpp > CMakeFiles\check.dir\src\CurlWrapper.cpp.i
 
-CMakeFiles/check.dir/src/subtract.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/check.dir/src/subtract.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\API_Scrapper\src\subtract.cpp -o CMakeFiles\check.dir\src\subtract.cpp.s
+CMakeFiles/check.dir/src/CurlWrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/check.dir/src/CurlWrapper.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\API_Scrapper\src\CurlWrapper.cpp -o CMakeFiles\check.dir\src\CurlWrapper.cpp.s
 
 # Object files for target check
 check_OBJECTS = \
 "CMakeFiles/check.dir/check.cpp.obj" \
-"CMakeFiles/check.dir/src/subtract.cpp.obj"
+"CMakeFiles/check.dir/src/CurlWrapper.cpp.obj"
 
 # External object files for target check
 check_EXTERNAL_OBJECTS =
 
 check.exe: CMakeFiles/check.dir/check.cpp.obj
-check.exe: CMakeFiles/check.dir/src/subtract.cpp.obj
+check.exe: CMakeFiles/check.dir/src/CurlWrapper.cpp.obj
 check.exe: CMakeFiles/check.dir/build.make
+check.exe: C:/msys64/ucrt64/lib/libcurl.dll.a
 check.exe: CMakeFiles/check.dir/linkLibs.rsp
 check.exe: CMakeFiles/check.dir/objects1.rsp
 check.exe: CMakeFiles/check.dir/link.txt

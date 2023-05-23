@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/check.dir/check.cpp.obj"
   "CMakeFiles/check.dir/check.cpp.obj.d"
-  "CMakeFiles/check.dir/src/subtract.cpp.obj"
-  "CMakeFiles/check.dir/src/subtract.cpp.obj.d"
+  "CMakeFiles/check.dir/src/CurlWrapper.cpp.obj"
+  "CMakeFiles/check.dir/src/CurlWrapper.cpp.obj.d"
   "check.exe"
   "check.exe.manifest"
   "check.pdb"

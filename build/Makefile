@@ -178,13 +178,36 @@ check.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/check.cpp.s
 .PHONY : check.cpp.s
 
+src/CurlWrapper.obj: src/CurlWrapper.cpp.obj
+.PHONY : src/CurlWrapper.obj
+
+# target to build an object file
+src/CurlWrapper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/CurlWrapper.cpp.obj
+.PHONY : src/CurlWrapper.cpp.obj
+
+src/CurlWrapper.i: src/CurlWrapper.cpp.i
+.PHONY : src/CurlWrapper.i
+
+# target to preprocess a source file
+src/CurlWrapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/CurlWrapper.cpp.i
+.PHONY : src/CurlWrapper.cpp.i
+
+src/CurlWrapper.s: src/CurlWrapper.cpp.s
+.PHONY : src/CurlWrapper.s
+
+# target to generate assembly for a file
+src/CurlWrapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/CurlWrapper.cpp.s
+.PHONY : src/CurlWrapper.cpp.s
+
 src/subtract.obj: src/subtract.cpp.obj
 .PHONY : src/subtract.obj
 
 # target to build an object file
 src/subtract.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtract_test.dir\build.make CMakeFiles/subtract_test.dir/src/subtract.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/subtract.cpp.obj
 .PHONY : src/subtract.cpp.obj
 
 src/subtract.i: src/subtract.cpp.i
@@ -193,7 +216,6 @@ src/subtract.i: src/subtract.cpp.i
 # target to preprocess a source file
 src/subtract.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtract_test.dir\build.make CMakeFiles/subtract_test.dir/src/subtract.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/subtract.cpp.i
 .PHONY : src/subtract.cpp.i
 
 src/subtract.s: src/subtract.cpp.s
@@ -202,7 +224,6 @@ src/subtract.s: src/subtract.cpp.s
 # target to generate assembly for a file
 src/subtract.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtract_test.dir\build.make CMakeFiles/subtract_test.dir/src/subtract.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/subtract.cpp.s
 .PHONY : src/subtract.cpp.s
 
 test/api_json_extraction_test.obj: test/api_json_extraction_test.cpp.obj
@@ -267,6 +288,9 @@ help:
 	@echo ... check.obj
 	@echo ... check.i
 	@echo ... check.s
+	@echo ... src/CurlWrapper.obj
+	@echo ... src/CurlWrapper.i
+	@echo ... src/CurlWrapper.s
 	@echo ... src/subtract.obj
 	@echo ... src/subtract.i
 	@echo ... src/subtract.s

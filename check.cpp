@@ -1,10 +1,14 @@
 
-#include "include/subtract.hpp"
 #include <iostream>
+#include "CurlWrapper.hpp"
 
-using namespace std;
-int main() {
+int main()
+{
+    CurlWrapper curlWrapper;
+    curlWrapper.setUrl("https://reqres.in/api/products/3");
+    curlWrapper.setFollowRedirects(true);
+    curlWrapper.performRequest();
 
-    cout << subtract(10,20) << endl;
+    
     return 0;
 }

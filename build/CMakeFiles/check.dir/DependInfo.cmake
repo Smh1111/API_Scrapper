@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/API_Scrapper/check.cpp" "CMakeFiles/check.dir/check.cpp.obj" "gcc" "CMakeFiles/check.dir/check.cpp.obj.d"
-  "D:/API_Scrapper/src/subtract.cpp" "CMakeFiles/check.dir/src/subtract.cpp.obj" "gcc" "CMakeFiles/check.dir/src/subtract.cpp.obj.d"
+  "D:/API_Scrapper/src/CurlWrapper.cpp" "CMakeFiles/check.dir/src/CurlWrapper.cpp.obj" "gcc" "CMakeFiles/check.dir/src/CurlWrapper.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

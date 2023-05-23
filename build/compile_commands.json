@@ -25,8 +25,8 @@
 },
 {
   "directory": "D:/API_Scrapper/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/check.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -o CMakeFiles\\check.dir\\src\\subtract.cpp.obj -c D:\\API_Scrapper\\src\\subtract.cpp",
-  "file": "D:/API_Scrapper/src/subtract.cpp",
-  "output": "CMakeFiles/check.dir/src/subtract.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/check.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -o CMakeFiles\\check.dir\\src\\CurlWrapper.cpp.obj -c D:\\API_Scrapper\\src\\CurlWrapper.cpp",
+  "file": "D:/API_Scrapper/src/CurlWrapper.cpp",
+  "output": "CMakeFiles/check.dir/src/CurlWrapper.cpp.obj"
 }
 ]

@@ -2,7 +2,7 @@
 
 #define SUBTRACT_HPP
 
-double subtract(double a, double b);
+double subtract(double a, double b); 
 
 
 #endif // SUBTRACT_HPP
