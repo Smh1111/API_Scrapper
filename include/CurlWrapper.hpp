@@ -4,8 +4,12 @@
 
 #include <curl/curl.h>
 #include <string>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 
 using namespace std;
+
 
 class CurlWrapper
 {
@@ -26,34 +30,28 @@ public:
         curl_global_cleanup();
     }
 
+    // Operations
+
     // Url setter
-    void setUrl(const std::string& url) {
-        
-        curl_easy_setopt(curl_handle, CURLOPT_URL, url.c_str());
-
-        // Don't bother trying IPv6, which would increase DNS resolution time.
-        curl_easy_setopt(curl_handle, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
-        
-        // Don't wait forever, time out after 10 seconds.
-        curl_easy_setopt(curl_handle, CURLOPT_TIMEOUT, 10);
-    }
-
-  
-    void setFollowRedirects(bool follow) {
-        curl_easy_setopt(curl_handle, CURLOPT_FOLLOWLOCATION, follow ? 1L : 0L);
-    }
+    void setUrl(const std::string& url);
 
     // Perform request
-    void performRequest() {
-        CURLcode res = curl_easy_perform(curl_handle);
-        if (res != CURLE_OK) {
-            fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
-        }
-    }
+    void performRequest();
 
+    // Set response data string from request result (in this case, json)
+    void setResponse_data();
+
+    void setFollowRedirects(bool follow);
+
+    // Get response data string (json)
+    string getResponseData() {
+        return response_data;
+    }
     
 private:
     CURL* curl_handle;
+    
+    std::string response_data;
 };
 
 
