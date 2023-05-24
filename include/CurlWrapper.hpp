@@ -41,6 +41,10 @@ public:
     // Set response data string from request result (in this case, json)
     void setResponse_data();
 
+    // Set response data string from request result to file
+    void setfile(); 
+
+    
     void setFollowRedirects(bool follow);
 
     // Get response data string (json)
@@ -50,7 +54,7 @@ public:
     
 private:
     CURL* curl_handle;
-    
+    CURLcode res;
     std::string response_data;
 };
 

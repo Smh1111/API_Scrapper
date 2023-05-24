@@ -35,6 +35,8 @@ int main()
     CurlWrapper curl;
     curl.setUrl("https://www.googleapis.com/books/v1/volumes/zyTCAlFPjgYC?key=AIzaSyBEu08wHao57QatWkgO4DmyhLX00CRYQag");
     curl.setFollowRedirects(true);
+
+    // curl.performRequest();
     curl.setResponse_data();
     std::cout << "Response: " <<std::endl << curl.getResponseData() << std::endl;
 

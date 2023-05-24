@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/check.dir/includes_CXX.rsp
 
-CXX_FLAGS = -g -std=c++17 -Wall -Wextra
+CXX_FLAGS = -g
 

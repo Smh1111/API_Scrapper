@@ -5,6 +5,7 @@ project("API_scrapper")
 find_package(doctest CONFIG REQUIRED)
 find_package(CURL REQUIRED)
 
+
 add_executable(api_json_extraction_test test/api_json_extraction_test.cpp)
 target_link_libraries(api_json_extraction_test PRIVATE doctest::doctest-header-only)
 
@@ -16,9 +17,12 @@ add_executable(check check.cpp src/CurlWrapper.cpp)
 target_link_libraries(check PRIVATE CURL::libcurl)
 target_include_directories(check PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+add_executable(ApiLogic check.cpp src/ApiLogic.cpp src/CurlWrapper.cpp)
+target_link_libraries(ApiLogic PRIVATE CURL::libcurl)
+target_include_directories(ApiLogic PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-set(TARGETS api_json_extraction_test subtract_test check)
-
+# set(TARGETS api_json_extraction_test subtract_test check)
+set(TARGETS ApiLogic)
 set_target_properties(
     ${TARGETS}
     PROPERTIES

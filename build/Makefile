@@ -154,12 +154,26 @@ check/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/build
 .PHONY : check/fast
 
+#=============================================================================
+# Target rules for targets named ApiLogic
+
+# Build rule for target.
+ApiLogic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ApiLogic
+.PHONY : ApiLogic
+
+# fast build rule for target.
+ApiLogic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/build
+.PHONY : ApiLogic/fast
+
 check.obj: check.cpp.obj
 .PHONY : check.obj
 
 # target to build an object file
 check.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/check.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/check.cpp.obj
 .PHONY : check.cpp.obj
 
 check.i: check.cpp.i
@@ -168,6 +182,7 @@ check.i: check.cpp.i
 # target to preprocess a source file
 check.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/check.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/check.cpp.i
 .PHONY : check.cpp.i
 
 check.s: check.cpp.s
@@ -176,7 +191,32 @@ check.s: check.cpp.s
 # target to generate assembly for a file
 check.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/check.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/check.cpp.s
 .PHONY : check.cpp.s
+
+src/ApiLogic.obj: src/ApiLogic.cpp.obj
+.PHONY : src/ApiLogic.obj
+
+# target to build an object file
+src/ApiLogic.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/src/ApiLogic.cpp.obj
+.PHONY : src/ApiLogic.cpp.obj
+
+src/ApiLogic.i: src/ApiLogic.cpp.i
+.PHONY : src/ApiLogic.i
+
+# target to preprocess a source file
+src/ApiLogic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/src/ApiLogic.cpp.i
+.PHONY : src/ApiLogic.cpp.i
+
+src/ApiLogic.s: src/ApiLogic.cpp.s
+.PHONY : src/ApiLogic.s
+
+# target to generate assembly for a file
+src/ApiLogic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/src/ApiLogic.cpp.s
+.PHONY : src/ApiLogic.cpp.s
 
 src/CurlWrapper.obj: src/CurlWrapper.cpp.obj
 .PHONY : src/CurlWrapper.obj
@@ -184,6 +224,7 @@ src/CurlWrapper.obj: src/CurlWrapper.cpp.obj
 # target to build an object file
 src/CurlWrapper.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/CurlWrapper.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/src/CurlWrapper.cpp.obj
 .PHONY : src/CurlWrapper.cpp.obj
 
 src/CurlWrapper.i: src/CurlWrapper.cpp.i
@@ -192,6 +233,7 @@ src/CurlWrapper.i: src/CurlWrapper.cpp.i
 # target to preprocess a source file
 src/CurlWrapper.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/CurlWrapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/src/CurlWrapper.cpp.i
 .PHONY : src/CurlWrapper.cpp.i
 
 src/CurlWrapper.s: src/CurlWrapper.cpp.s
@@ -200,6 +242,7 @@ src/CurlWrapper.s: src/CurlWrapper.cpp.s
 # target to generate assembly for a file
 src/CurlWrapper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\check.dir\build.make CMakeFiles/check.dir/src/CurlWrapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ApiLogic.dir\build.make CMakeFiles/ApiLogic.dir/src/CurlWrapper.cpp.s
 .PHONY : src/CurlWrapper.cpp.s
 
 src/subtract.obj: src/subtract.cpp.obj
@@ -282,12 +325,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... ApiLogic
 	@echo ... api_json_extraction_test
 	@echo ... check
 	@echo ... subtract_test
 	@echo ... check.obj
 	@echo ... check.i
 	@echo ... check.s
+	@echo ... src/ApiLogic.obj
+	@echo ... src/ApiLogic.i
+	@echo ... src/ApiLogic.s
 	@echo ... src/CurlWrapper.obj
 	@echo ... src/CurlWrapper.i
 	@echo ... src/CurlWrapper.s

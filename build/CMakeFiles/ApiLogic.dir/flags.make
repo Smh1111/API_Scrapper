@@ -4,7 +4,7 @@
 # compile CXX with C:/msys64/ucrt64/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/api_json_extraction_test.dir/includes_CXX.rsp
+CXX_INCLUDES = @CMakeFiles/ApiLogic.dir/includes_CXX.rsp
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -std=c++17 -Wall -Wextra
 
